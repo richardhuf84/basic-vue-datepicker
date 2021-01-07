@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"No test specified\""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardhuf84/basic-vue-datepicker.git"
+  },
   "author": "Richard Huf <richardhuf84@gmail.com>",
   "license": "ISC"
 }
