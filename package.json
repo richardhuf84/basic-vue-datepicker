@@ -1,0 +1,11 @@
+{
+  "name": "@richardhuf/basic-vue-datepicker",
+  "version": "1.0.0",
+  "description": "A basic Vue JS datepicker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Richard Huf <richardhuf84@gmail.com>",
+  "license": "ISC"
+}
