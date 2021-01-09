@@ -10,9 +10,9 @@
   },
   "scripts": {
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/my-component.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/my-component.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/my-component.min.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/basic-vue-datepicker.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/basic-vue-datepicker.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/basic-vue-datepicker.min.js",
     "test": "echo \"No test specified\""
   },
   "repository": {
