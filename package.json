@@ -2,8 +2,17 @@
   "name": "@richardhuf/basic-vue-datepicker",
   "version": "1.0.1",
   "description": "A basic Vue JS datepicker.",
-  "main": "index.js",
+  "main": "dist/basic-vue-date-picker.umd.js",
+  "module": "dist/basic-vue-date-picker.esm.js",
+  "unpkg": "dist/basic-vue-date-picker.min.js",
+  "browser": {
+    "./sfc": "src/basic-vue-date-picker.vue"
+  },
   "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/my-component.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/my-component.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/my-component.min.js",
     "test": "echo \"No test specified\""
   },
   "repository": {
@@ -11,5 +20,13 @@
     "url": "https://github.com/richardhuf84/basic-vue-datepicker.git"
   },
   "author": "Richard Huf <richardhuf84@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  }
 }
