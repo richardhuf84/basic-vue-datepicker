@@ -1,6 +1,6 @@
 {
   "name": "@richardhuf/basic-vue-datepicker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A basic Vue JS datepicker.",
   "main": "dist/basic-vue-date-picker.umd.js",
   "module": "dist/basic-vue-date-picker.esm.js",
